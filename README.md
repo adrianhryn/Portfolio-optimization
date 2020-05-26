@@ -37,7 +37,7 @@ If you want to get acquainted with all details, check our poster in 'results/pre
 
 In our work, we used Quantopian API which you can not run outside of Quantopian environment.
 So, in order to run our code you should sign up and log in [here](https://www.quantopian.com/posts)
-Then you can upload our notebook and run it from top to down.
+Then you can upload our notebook from 'analysis_notebooks' directory and run it from top to down.
 
 If you want to see the algorithms performance and their statistics, you should:
 1. Click 'New Algorithm'
@@ -51,4 +51,8 @@ All the requirements to libraries versions are satisfied inside the Quantopian p
 All the data you need you can query through the code using Quantopian API (which is implemented in our code).
 Each of the .py files on this repository is a distinct algorithm which you can easily run if you follow the six steps above.
 
-
+## Resources that were of great help for us
+- Quantopian platform. Their lectures, tutorials, examples and community forum are beautiful and very usefull for comperhensive research.
+Next steps to concetrate:
+- Medium blog of Alex Honchar about Neural Networks for timeseries predictions
+- [Deep Learning for Predicting Asset Returns](https://arxiv.org/abs/1804.09314) by Guanhao Feng, Jingyu He, Nicholas G. Polson
