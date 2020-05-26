@@ -53,6 +53,7 @@ Each of the .py files on this repository is a distinct algorithm which you can e
 
 ## Resources that were of great help for us
 - Quantopian platform. Their lectures, tutorials, examples and community forum are beautiful and very usefull for comperhensive research.
+
 Next steps to concetrate:
 - Medium blog of Alex Honchar about Neural Networks for timeseries predictions
 - [Deep Learning for Predicting Asset Returns](https://arxiv.org/abs/1804.09314) by Guanhao Feng, Jingyu He, Nicholas G. Polson
