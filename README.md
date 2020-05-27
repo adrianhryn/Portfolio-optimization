@@ -34,7 +34,7 @@ First round stands for model selection, we preserve the same time period and SPY
 
 You can see below how constructed portfolios in the second round perform on the out of sample periods.
 
-It is worth adding that third long-short algorithm passed all the constraints to the Quantopian contest, you can find them [here](https://www.quantopian.com/contest). It also gave a better average results comparing to the market index.
+It is worth adding that third long-short algorithm passed all the constraints to the Quantopian contest, you can find them [here](https://www.quantopian.com/contest). It also gave better average results comparing to the market index.
 
 **Figure 1: Quantopian optimizer + eps and momentum as combined factor**
 ![Figure 1](https://github.com/adrianhryn/Portfolio-optimization/blob/master/results/out_of_sample_plots/long_short_quantopian_api.png)
