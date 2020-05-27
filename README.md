@@ -1,4 +1,4 @@
-# Portfolio-optimization
+# Portfolio optimization
 
 ## Structure:
 1. Introduction
@@ -27,20 +27,22 @@ For now on, we ran several experiments with long/short strategies using Quantopi
 
 ## Results and plots
 
-First round stands for model selection, we preserve the same time period and SPY index as performance benchmark for all experiments. The second round stands for testing on out of sample data, it consists of non-overlapping with first round time period. There is the long-short approach and the traditional one. It is worth adding that third long-short algorithm passed all the constraints to the Quantopian contest, you can find them [here](https://www.quantopian.com/contest) and our Portfolio with Genetic algorithm could be a better option for people that want to buy a market index. There is no finetuning of parameters in the second round, we used the same factors and algorithms parameters of the first round winners (see the figures with perfomance below). And, of course, we did factor analysis and run the backtest only with meaningful factors, which we know from alphalens framework.
+First round stands for model selection, we preserve the same time period and SPY index as performance benchmark for all experiments. The second round stands for testing on out of sample data, it consists of non-overlapping with first round time period. There is the long-short approach and the traditional one. There is no finetuning of parameters in the second round, we used the same factors and the same algorithms parameters of the first round winners (see the figures with perfomance below). And, of course, we did factor analysis and ran the backtest only with meaningful factors, which we know from alphalens framework.
 
 **Table 1: First and second rounds of experiments**
 ![Results](https://github.com/adrianhryn/Portfolio-optimization/blob/master/results/results_table.png)
 
 You can see below how constructed portfolios in the second round perform on the out of sample periods.
 
+It is worth adding that third long-short algorithm passed all the constraints to the Quantopian contest, you can find them [here](https://www.quantopian.com/contest). It also gave a better average results comparing to the market index.
+
 **Figure 1: Quantopian optimizer + eps and momentum as combined factor**
 ![Figure 1](https://github.com/adrianhryn/Portfolio-optimization/blob/master/results/out_of_sample_plots/long_short_quantopian_api.png)
 
+The portfolio based on Genetic algorithm optimizer could be a better option for people that want to buy the market index, because it performed noticeably better on the last two year period. Although it fell to much during the start of the Covid crisis, but then it went up with great speed comparing to the market index.
 
 **Figure 2: Genetic algorithm optimizer + eps and momentum as combined factor**
 ![Figure 2](https://github.com/adrianhryn/Portfolio-optimization/blob/master/results/out_of_sample_plots/traditional_genetic.png)
-
 
 If you want to get acquainted with all details, check our poster in 'results/presentations' directory and presentation [here](https://docs.google.com/presentation/d/19knJVxAn4K7khZVep67Lgszupuyzt1Je9Mu0rliJmJ0/edit?usp=sharing). There are many visualizations and more detailed explanations.
 
@@ -60,7 +62,7 @@ If you want to see the algorithms performance and their statistics, you should:
 
 All the requirements to libraries versions are satisfied inside the Quantopian platform.
 All the data you need you can query through the code using Quantopian API (which is implemented in our code).
-Each of the .py files on this repository is a distinct algorithm which you can easily run if you follow the six steps above.
+Each of the .py files in the 'algorithms/' directory is a distinct algorithm which you can easily run if you follow the six steps above.
 
 ## Resources that were of great help for us
 - Quantopian platform. Their lectures, tutorials, examples and community forum are beautiful and very usefull for comperhensive research.
